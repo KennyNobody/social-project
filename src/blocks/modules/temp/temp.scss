@@ -1,0 +1,15 @@
+.temp {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-top: 1px solid $light;
+	&__link {
+		color: $dark;
+		display: block;
+		font-size: 28px;
+		margin-bottom: 15px;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

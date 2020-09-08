@@ -1,0 +1,10 @@
+.title {
+	font-weight: bold;
+	font-size: 36px;
+	color: inherit;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	&--center {
+		text-align: center;
+	}
+}
