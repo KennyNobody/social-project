@@ -1,0 +1,65 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	height: 60px;
+	background-color: $red;
+	color: $light;
+	border-radius: 30px;
+	text-decoration: none;
+	align-items: center;
+	min-width: 238px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 700;
+	overflow: hidden;
+	position: relative;
+	transform: translate3d(0,0,0);
+	&:hover {
+		opacity: 0.7;
+	}
+	&--shadow {
+		box-shadow: 0px 4px 4px rgba(142, 58, 58, 0.5);
+	}
+	&__text {
+		font-weight: 700;
+	}
+	&__icon {
+		display: block;
+		width: 21px;
+		height: 21px;
+		margin-left: 10px;
+	}
+	&__ink {
+		display: block;
+		position: absolute;
+		background: rgba(255, 255, 255, 1.0);
+		border-radius: 100%;
+		transform: scale(0);
+		z-index: 20;  
+	}
+	&__animate {
+		animation: ripple 4s linear infinite;
+		&--to-left {
+			height: 200px;
+			width: 250px;
+			bottom: -20px;
+			right: -140px;
+		}
+		&--to-right {
+			height: 200px;
+			width: 250px;
+			top: -20px;
+			left: -140px;
+		}
+	}
+	@keyframes ripple {  
+		20% {     
+			opacity: 0;     
+			transform: scale(2.5);
+		}
+		100% {     
+			opacity: 0;     
+			transform: scale(2.5);
+		}
+	}    
+}

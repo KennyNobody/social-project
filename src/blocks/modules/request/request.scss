@@ -1,0 +1,27 @@
+.request {
+	&__title {
+
+	}
+	&__content {
+		margin-bottom: 40px;
+		width: calc(100% / 12 * 8);
+	}
+	&__toolbar {
+		width: fit-content;
+		position: relative;
+		&:after {
+			background-image: url('../img/request-accent.svg');
+			position: absolute;
+			display: block;
+			width: 182px;
+			height: 102px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			left: 168px;
+			top: -5px;
+			background-position: center;
+			content: '';
+			pointer-events: none;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.partner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	color: $dark;
+	text-decoration: none;
+	border: 1px solid #E3EBFB;
+	border-radius: 5px;
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}

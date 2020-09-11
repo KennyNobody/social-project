@@ -1,6 +1,20 @@
 .section {
 	padding-top: 100px;
 	padding-bottom: 100px;
+	overflow-x: hidden;
+	display: block;
+	width: 100%;
+	&--intro {
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding: 0px;
+	}
+	&--bg-contain {
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 	&--breadcrumbs {
 		padding-top: 25px;
 		padding-bottom: 25px;
@@ -11,6 +25,7 @@
 	&--blue {
 		background-color: $blue;
 		color: $light;
+		// background-image: url('../img/ungle-bottom.svg');
 	}
 	&--gray {
 		background-color: $gray;
