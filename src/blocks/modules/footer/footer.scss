@@ -2,4 +2,41 @@
 	padding-top: 32px;
 	padding-bottom: 26px;
 	background-color: $blue;
+	color: $light;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__logos {
+
+	}
+	&__content {
+
+	}
+	&__nav {
+		
+	}
+	&__link {
+		text-decoration: none;
+		color: $light;
+		margin-right: 57px;
+		&:last-of-type {
+			margin-right: 0px;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__copyright {
+
+	}
+	&__author {
+		a {
+			color: $red;
+			text-decoration: none;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
 }

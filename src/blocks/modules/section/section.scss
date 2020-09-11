@@ -10,6 +10,11 @@
 		background-repeat: no-repeat;
 		padding: 0px;
 	}
+	&--footer {
+		background-color: $blue;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	&--bg-contain {
 		background-size: contain;
 		background-position: center;
