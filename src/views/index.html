@@ -99,7 +99,7 @@
                 @@include("../blocks/modules/preview/preview.html")
             </div>
         </section>
-        <section class="section section--blue section--bg-contain" style="background-image: url('img/docs-bg.svg')">
+        <section class="section section--blue" style="background-image: url('img/ungle-bottom.svg'), url('img/ungle-top.svg'), url('img/docs-bg.svg')">
             <div class="container">
                 <div class="request">
                     <div class="request__title">
@@ -255,6 +255,18 @@
                 <h2 class="title title--center">
                     Победители прошлых лет
                 </h2>
+                <div class="articles">
+                    <div class="articles__content articles__content--static">
+                        @@include("../blocks/modules/slider/slider.html")
+                    </div>
+                    <div class="articles__toolbar">
+                        <a href="archive.html" class="btn">
+                            <span class="btn__text">
+                                Смотреть всех
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section">
@@ -265,7 +277,7 @@
                 <div class="articles">
                     <div class="articles__content">
                         <div class="articles__item articles__item--75">
-
+                            @@include("../blocks/modules/article-large/article-large.html")
                         </div>
                         <div class="articles__item articles__item--25">
                             <a href="" class="article-card">
@@ -404,7 +416,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--blue section--bg-contain" style="background-image: url('img/docs-bg.svg')">
+        <section class="section section--blue" style="background-image: url('img/ungle-bottom.svg'), url('img/ungle-top.svg'), url('img/docs-bg.svg')">
             <div class="container">
                 <h2 class="title">
                     Документы

@@ -30,7 +30,9 @@
 	&--blue {
 		background-color: $blue;
 		color: $light;
-		// background-image: url('../img/ungle-bottom.svg');
+		background-size: 290px 290px, 290px 290px, contain;
+		background-position: bottom left, top right, center;
+		background-repeat: no-repeat;
 	}
 	&--gray {
 		background-color: $gray;

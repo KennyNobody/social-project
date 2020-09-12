@@ -809,6 +809,9 @@ button.swiper-pagination-bullet {
 .section--blue {
   background-color: #599CFF;
   color: #ffffff;
+  background-size: 290px 290px, 290px 290px, contain;
+  background-position: bottom left, top right, center;
+  background-repeat: no-repeat;
 }
 
 .section--gray {
@@ -1058,6 +1061,39 @@ button.swiper-pagination-bullet {
   pointer-events: none;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider__slide {
+  background-color: #ffffff;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__btn--prev {
+  left: 0px;
+}
+
+.slider__btn--next {
+  right: 0px;
+}
+
+.slider__btn-icon {
+  width: 16px;
+  height: 24px;
+}
+
 .article-card {
   display: flex;
   flex-direction: column;
@@ -1115,6 +1151,165 @@ button.swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   margin-left: 8px;
+}
+
+.article-large {
+  background-color: red;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.article-large:hover {
+  opacity: 0.7;
+}
+
+.article-large__picture {
+  height: 444px;
+  display: block;
+}
+
+.article-large__picture img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-large__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0.08) 12%, rgba(0, 0, 0, 0.16) 17%, rgba(0, 0, 0, 0.22) 21%, rgba(0, 0, 0, 0.32) 26%, rgba(0, 0, 0, 0.42) 32%, rgba(0, 0, 0, 0.52) 38%, rgba(0, 0, 0, 0.62) 47%, rgba(0, 0, 0, 0.72) 57%, rgba(0, 0, 0, 0.82) 65%);
+}
+
+.article-large__date {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.article-large__title {
+  font-weight: 700;
+  font-size: 24px;
+  width: 70%;
+}
+
+.article-person {
+  padding: 40px 15px 25px 15px;
+  display: block;
+  text-align: center;
+  color: #202B55;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.article-person:hover {
+  background-color: #599CFF;
+  color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.article-person:hover .article-person__tag {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.article-person__thumb {
+  width: 198px;
+  height: 198px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+.article-person__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 150px;
+  overflow: hidden;
+  display: block;
+}
+
+.article-person__award {
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 40px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.article-person__award-icon {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+
+.article-person__surname {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.article-person__name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.article-person__tags {
+  margin-bottom: 15px;
+}
+
+.article-person__tag {
+  margin-bottom: 10px;
+  border: 2px solid #202B55;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px 15px;
+  width: fit-content;
+  transition: 0.3s all;
+}
+
+.article-person__tag:last-of-type {
+  margin-bottom: 0px;
+}
+
+.article-person__tag--federal {
+  border: 2px solid #FF3857;
+  color: #FF3857;
+}
+
+.article-person__tag--regional {
+  border: 2px solid #599CFF;
+  color: #599CFF;
+}
+
+.article-person__discript {
+  font-size: 14px;
 }
 
 .temp {
@@ -1176,6 +1371,10 @@ button.swiper-pagination-bullet {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+
+.articles__content--static {
+  display: block;
 }
 
 .articles__item {

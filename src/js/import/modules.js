@@ -1,3 +1,3 @@
 import "%modules%/section-header/section-header";
 import "%modules%/header/header";
-import "%modules%/footer/footer"
+import "%modules%/slider/slider"

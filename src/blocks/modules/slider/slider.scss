@@ -1,0 +1,27 @@
+.slider {
+	position: relative;
+	&__slide {
+		background-color: $light;
+	}
+	&__btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--prev {
+			left: 0px;
+		}
+		&--next {
+			right: 0px;
+		}
+	}
+	&__btn-icon {
+		width: 16px;
+		height: 24px;
+	}
+}

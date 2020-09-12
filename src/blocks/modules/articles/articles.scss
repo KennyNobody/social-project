@@ -4,6 +4,9 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 30px;
+		&--static {
+			display: block;
+		}
 	}
 	&__item {
 		width: 100%;
