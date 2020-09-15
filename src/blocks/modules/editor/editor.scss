@@ -1,8 +1,80 @@
 .editor {
+	&--bottom-50 {
+		margin-bottom: 50px;
+	}
+	&--bottom-60 {
+		margin-bottom: 60px;
+	}
+	h2, h3, h4, h5 {
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	h5 {
+		font-size: 18px;
+	}
+	strong, b {
+		font-weight: 700;
+	}
 	p {
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 		&:last-of-type {
 			margin-bottom: 0px;
+		}
+	}
+	blockquote {
+		display: block;
+		margin-bottom: 1.5rem;
+		position: relative;
+		padding-left: 32px;
+		border-left: 2px solid $red;
+		font-style: italic;
+	}
+	figure {
+		display: block;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #848DB0;
+		margin-bottom: 1.5rem;
+	}
+	figcaption {
+		color: #848DB0;
+	}
+	picture {
+		display: block;
+	}
+	img {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	a {
+		color: $dark;
+		position: relative;
+		text-decoration: none;
+		display: inline-block;
+		&:after {
+			content: "";
+			display: block;
+			height: 2px;
+			background-color: $red;
+			top: calc(100% - 3px);
+			position: absolute;
+			left: 0px;
+			width: 100%;
+			transition: 0.15s all;
+		}
+		&:hover {
+			&:after {
+				opacity: 0;
+			}
 		}
 	}
 }

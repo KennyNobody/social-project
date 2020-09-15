@@ -1,10 +1,21 @@
 .request {
+	display: flex;
+	justify-content: space-between;
+	&__main {
+		width: calc(100% / 12 * 8 - 10px);
+	}
+	&__thumb {
+		width: calc(100% / 12 * 4 - 10px);
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
 	&__title {
 
 	}
 	&__content {
 		margin-bottom: 40px;
-		width: calc(100% / 12 * 8);
 	}
 	&__toolbar {
 		width: fit-content;

@@ -28,6 +28,8 @@
 		padding-bottom: 49px;
 		position: relative;
 		background-color: rgba(255, 255, 255, 0.5);
+		display: flex;
+		align-items: center;
 		&:before {
 			content: '';
 			display: block;
@@ -60,5 +62,42 @@
 	}
 	&__footer-text {
 		font-size: 24px;
+	}
+	&__decor {
+		position: absolute;
+		padding-left: 79px;
+		padding-right: 385px;
+		display: block;
+		top: 250px;
+		left: -150px;
+		transform: rotate(-90deg);
+		&-text {
+			font-size: 48px;
+			color: $light;
+		}
+		&:before {
+			left: 0px;
+			content: "";
+			display: block;
+			width: 53px;
+			top: 50%;
+			height: 2px;
+			background-color: $light;
+			position: absolute;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 375px;
+			top: 50%;
+			height: 2px;
+			right: 0px;
+			background-color: $light;
+			position: absolute;
+		}
+	}
+	&__loader {
+		flex-shrink: 0;
+		margin-right: 23px;
 	}
 }

@@ -1,0 +1,14 @@
+.loader{
+	background: rgba(0,0,0,0.2);
+	width: 85px;
+	height:  85px;
+	border-radius: 50px;
+	background-color: $red;
+	&__spinner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height:  100%;
+	}
+}

@@ -1,0 +1,89 @@
+.article-winner {
+	padding: 40px 60px;
+	display: flex;
+	color: $dark;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #F1F6FF;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% / 12 * 8 - 20px);
+	&:hover {
+		background-color: $blue;
+		color: $light;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+		.article-winner__tag {
+			color: $light;
+			border-color: $light;
+		}
+	}
+	&__thumb {
+		width: 198px;
+		height: 198px;
+		display: block;
+		margin-right: 40px;
+		position: relative;
+	}
+	&__picture {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 150px;
+		overflow: hidden;
+		display: block;
+	}
+	&__award {
+		width: 56px;
+		height: 56px;
+		background-color: $light;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		border-radius: 40px;
+		right: 0px;
+		bottom: 0px;
+	}
+	&__award-icon {
+		display: block;
+		height: 40px;
+		width: 100%;
+	}
+	&__surname {
+		font-weight: 700;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	&__name {
+		font-weight: 700;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	&__tags {
+		margin-bottom: 15px;
+		display: flex;
+	}
+	&__tag {
+		margin-bottom: 10px;
+		border: 2px solid $dark;
+		border-radius: 30px;
+		font-weight: 700;
+		font-size: 14px;
+		display: block;
+		margin-right: 15px;
+		padding: 7px 15px;
+		width: fit-content;
+		transition: 0.3s all;
+		&--federal {
+			border: 2px solid $red;
+			color: $red;
+		}
+		&--regional {
+			border: 2px solid $blue;
+			color: $blue;
+		}
+	}
+	&__discript {
+		font-size: 14px;
+	}
+}

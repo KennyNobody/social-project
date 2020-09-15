@@ -1,0 +1,41 @@
+.progress-icon {
+	background-color: $light;
+	border: 2px solid #E3EBFB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 56px;
+	height: 56px;
+	border-radius: 100px;
+	position: relative;
+	&--static {
+		.progress-icon__content {
+			background-color: #E3EBFB;
+		}
+		.progress-icon__text {
+			color: #848DB0;
+		}
+	}
+	&--active {
+		width: 80px;
+		height: 80px;
+		.progress-icon__content {
+			width: 58px;
+			height: 58px;
+		}
+	}
+	&__content {
+		background-color: $red;
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__text {
+		color: $light;
+		font-weight: 700;
+		font-size: 24px;
+	}
+}

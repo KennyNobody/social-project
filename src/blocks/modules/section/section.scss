@@ -30,11 +30,20 @@
 	&--blue {
 		background-color: $blue;
 		color: $light;
+	}
+	&--decor {
 		background-size: 290px 290px, 290px 290px, contain;
-		background-position: bottom left, top right, center;
+		background-position: bottom left -10px, top right -10px, center;
 		background-repeat: no-repeat;
 	}
 	&--gray {
 		background-color: $gray;
+	}
+	&--none {
+		background-color: $blue;
+		color: $light;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 }
