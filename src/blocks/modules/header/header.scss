@@ -5,13 +5,25 @@
 	padding-top: 19px;
 	padding-bottom: 19px;
 	transition: 0.3s all;
+	@include r(1200) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 	&--front {
 		padding-top: 25px;
 		padding-bottom: 25px;
+		@include r(1200) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 	}
 	&--static {
 		padding-top: 19px;
 		padding-bottom: 19px;
+		@include r(1200) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 		.header__logo-path {
 			fill: $light;
 			transition: 0.3s all;
@@ -31,6 +43,9 @@
 	&__logo {
 		text-decoration: none;
 		margin-right: 27px;
+		@include r(1200) {
+			margin-right: 15px;
+		}
 		&:hover {
 			opacity: 0.7;
 		}
@@ -46,6 +61,9 @@
 	}
 	&__nav {
 		display: flex;
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&__link {
 		color: $dark;
@@ -73,4 +91,19 @@
 			}
 		}
 	}
+	&__btn {
+		padding: 5px;
+		border: none;
+		background: none;
+		display: none;
+		@include r(1200) {
+			display: block;
+		}
+	}
+	&__burger-icon {
+		width: 24px;
+		height: 24px;
+		display: block;
+	}
+
 }

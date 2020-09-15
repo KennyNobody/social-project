@@ -4,6 +4,9 @@
 	}
 	&__list {
 		display: block !important;
+		@include r(1200) {
+			display: flex !important;
+		}
 	}
 	&__item {
 		display: block !important;

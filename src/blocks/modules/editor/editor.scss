@@ -11,15 +11,27 @@
 	}
 	h2 {
 		font-size: 36px;
+		@include r(1200) {
+			font-size: 22px;
+		}
 	}
 	h3 {
 		font-size: 24px;
+		@include r(1200) {
+			font-size: 20px;
+		}
 	}
 	h4 {
 		font-size: 20px;
+		@include r(1200) {
+			font-size: 18px;
+		}
 	}
 	h5 {
 		font-size: 18px;
+		@include r(1200) {
+			font-size: 16px;
+		}
 	}
 	strong, b {
 		font-weight: 700;
@@ -38,15 +50,25 @@
 		border-left: 2px solid $red;
 		font-style: italic;
 		font-size: 18px;
+		@include r(1200) {
+			font-size: 16px;
+			padding-left: 10px;
+		}
 	}
 	figure {
 		display: block;
 		padding-bottom: 15px;
 		border-bottom: 1px solid #848DB0;
 		margin-bottom: 1.5rem;
+		@include r(1200) {
+			padding-bottom: 10px;
+		}
 	}
 	figcaption {
 		color: #848DB0;
+		@include r(1200) {
+			font-size: 14px;
+		}
 	}
 	picture {
 		display: block;
@@ -55,6 +77,9 @@
 		display: block;
 		width: 100%;
 		margin-bottom: 15px;
+		@include r(1200) {
+			margin-bottom: 10px;
+		}
 	}
 	a {
 		color: $dark;

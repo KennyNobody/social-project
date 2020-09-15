@@ -16,6 +16,9 @@
 			border-color: $light;
 		}
 	}
+	@include r(1200) {
+
+	}
 	&__thumb {
 		width: 198px;
 		height: 198px;

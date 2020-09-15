@@ -81,6 +81,11 @@
                         Контакты
                     </a>
                 </nav>
+                <button class="header__btn">
+                    <svg class="header__burger-icon">
+                        <use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
@@ -440,11 +445,9 @@
                 </h2>
                 <div class="links">
                     <div class="links__content">
-                        <div class="articles articles--static">
-                            @@include("../blocks/modules/doc-link/doc-link.html")
-                            @@include("../blocks/modules/doc-link/doc-link.html")
-                            @@include("../blocks/modules/doc-link/doc-link.html")
-                        </div>
+                        @@include("../blocks/modules/doc-link/doc-link.html")
+                        @@include("../blocks/modules/doc-link/doc-link.html")
+                        @@include("../blocks/modules/doc-link/doc-link.html")
                     </div>
                     <div class="links__thumb">
                         <img src="img/links-bg.svg" alt="">
@@ -465,84 +468,82 @@
                 <h2 class="title">
                     Контакты
                 </h2>
-                <div class="articles articles--static">
-                    <article class="article-contact">
-                        <div class="article-contact__column article-contact__column--thumb">
-                            <picture class="article-contact__picture">
-                                <source type="image/webp" srcset="https://placehold.it/1200x900"></source>
-                                <source srcset="https://placehold.it/1200x900"></source>
-                                <img src="https://placehold.it/1200x900" alt="Имя Фамилия">
-                            </picture>
-                        </div>
-                        <div class="article-contact__column article-contact__column--name">
-                            <h4 class="article-contact__surname">
-                                Звягин
-                            </h4>
-                            <p class="article-contact__name">
-                                Кирилл Валерьевич
+                <article class="article-contact">
+                    <div class="article-contact__column article-contact__column--thumb">
+                        <picture class="article-contact__picture">
+                            <source type="image/webp" srcset="https://placehold.it/1200x900"></source>
+                            <source srcset="https://placehold.it/1200x900"></source>
+                            <img src="https://placehold.it/1200x900" alt="Имя Фамилия">
+                        </picture>
+                    </div>
+                    <div class="article-contact__column article-contact__column--name">
+                        <h4 class="article-contact__surname">
+                            Звягин
+                        </h4>
+                        <p class="article-contact__name">
+                            Кирилл Валерьевич
+                        </p>
+                        <p class="article-contact__job">
+                            Начальник отдела
+                        </p>
+                    </div>
+                    <div class="article-contact__column article-contact__column--info">
+                        <a href="" class="article-contact__line">
+                            <svg class="article-contact__line-icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-contact-phone"></use>
+                            </svg>
+                            <p class="article-contact__line-text article-contact__line-text--bold">
+                                +7 (4012) 994-588 (доб. 932)
                             </p>
-                            <p class="article-contact__job">
-                                Начальник отдела
+                        </a>
+                        <a href="" class="article-contact__line">
+                            <svg class="article-contact__line-icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-contact-mail"></use>
+                            </svg>
+                            <p class="article-contact__line-text">
+                                zvyagin@mbkaliningrad.ru 
                             </p>
-                        </div>
-                        <div class="article-contact__column article-contact__column--info">
-                            <a href="" class="article-contact__line">
-                                <svg class="article-contact__line-icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-contact-phone"></use>
-                                </svg>
-                                <p class="article-contact__line-text article-contact__line-text--bold">
-                                    +7 (4012) 994-588 (доб. 932)
-                                </p>
-                            </a>
-                            <a href="" class="article-contact__line">
-                                <svg class="article-contact__line-icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-contact-mail"></use>
-                                </svg>
-                                <p class="article-contact__line-text">
-                                    zvyagin@mbkaliningrad.ru 
-                                </p>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="article-contact">
-                        <div class="article-contact__column article-contact__column--thumb">
-                            <picture class="article-contact__picture">
-                                <source type="image/webp" srcset="https://placehold.it/1200x900"></source>
-                                <source srcset="https://placehold.it/1200x900"></source>
-                                <img src="https://placehold.it/1200x900" alt="Имя Фамилия">
-                            </picture>
-                        </div>
-                        <div class="article-contact__column article-contact__column--name">
-                            <h4 class="article-contact__surname">
-                                Звягин
-                            </h4>
-                            <p class="article-contact__name">
-                                Кирилл Валерьевич
+                        </a>
+                    </div>
+                </article>
+                <article class="article-contact">
+                    <div class="article-contact__column article-contact__column--thumb">
+                        <picture class="article-contact__picture">
+                            <source type="image/webp" srcset="https://placehold.it/1200x900"></source>
+                            <source srcset="https://placehold.it/1200x900"></source>
+                            <img src="https://placehold.it/1200x900" alt="Имя Фамилия">
+                        </picture>
+                    </div>
+                    <div class="article-contact__column article-contact__column--name">
+                        <h4 class="article-contact__surname">
+                            Звягин
+                        </h4>
+                        <p class="article-contact__name">
+                            Кирилл Валерьевич
+                        </p>
+                        <p class="article-contact__job">
+                            Начальник отдела
+                        </p>
+                    </div>
+                    <div class="article-contact__column article-contact__column--info">
+                        <a href="" class="article-contact__line">
+                            <svg class="article-contact__line-icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-contact-phone"></use>
+                            </svg>
+                            <p class="article-contact__line-text article-contact__line-text--bold">
+                                +7 (4012) 994-588 (доб. 932)
                             </p>
-                            <p class="article-contact__job">
-                                Начальник отдела
+                        </a>
+                        <a href="" class="article-contact__line">
+                            <svg class="article-contact__line-icon">
+                                <use xlink:href="img/sprites/sprite.svg#icon-contact-mail"></use>
+                            </svg>
+                            <p class="article-contact__line-text">
+                                zvyagin@mbkaliningrad.ru 
                             </p>
-                        </div>
-                        <div class="article-contact__column article-contact__column--info">
-                            <a href="" class="article-contact__line">
-                                <svg class="article-contact__line-icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-contact-phone"></use>
-                                </svg>
-                                <p class="article-contact__line-text article-contact__line-text--bold">
-                                    +7 (4012) 994-588 (доб. 932)
-                                </p>
-                            </a>
-                            <a href="" class="article-contact__line">
-                                <svg class="article-contact__line-icon">
-                                    <use xlink:href="img/sprites/sprite.svg#icon-contact-mail"></use>
-                                </svg>
-                                <p class="article-contact__line-text">
-                                    zvyagin@mbkaliningrad.ru 
-                                </p>
-                            </a>
-                        </div>
-                    </article>
-                </div>
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
         <section class="section">

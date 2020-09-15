@@ -4,6 +4,10 @@
 	color: inherit;
 	text-transform: uppercase;
 	margin-bottom: 60px;
+	@include r(1200) {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
 	&--center {
 		text-align: center;
 	}

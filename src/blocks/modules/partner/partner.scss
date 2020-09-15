@@ -7,6 +7,9 @@
 	text-decoration: none;
 	border: 1px solid #E3EBFB;
 	border-radius: 5px;
+	@include r(1200) {
+		padding: 15px;
+	}
 	&__img {
 		display: block;
 		width: 100%;

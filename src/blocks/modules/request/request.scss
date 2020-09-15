@@ -3,9 +3,15 @@
 	justify-content: space-between;
 	&__main {
 		width: calc(100% / 12 * 8 - 10px);
+		@include r(1200) {
+			width: 100%;
+		}
 	}
 	&__thumb {
 		width: calc(100% / 12 * 4 - 10px);
+		@include r(1200) {
+			display: none;
+		}
 		img {
 			display: block;
 			width: 100%;
@@ -16,6 +22,9 @@
 	}
 	&__content {
 		margin-bottom: 40px;
+		@include r(1200) {
+			margin-bottom: 20px;
+		}
 	}
 	&__toolbar {
 		width: fit-content;
@@ -33,6 +42,9 @@
 			background-position: center;
 			content: '';
 			pointer-events: none;
+			@include r(1200) {
+				display: none;
+			}
 		}
 	}
 }

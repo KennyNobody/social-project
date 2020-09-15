@@ -4,11 +4,20 @@
 	overflow-x: hidden;
 	display: block;
 	width: 100%;
+	@include r(1200) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 	&--intro {
 		background-size: cover;
 		background-position: center top;
 		background-repeat: no-repeat;
 		padding: 0px;
+		@include r(1200) {
+			padding: 0px;
+			background-image: none !important;
+			background-color: $blue;
+		}
 	}
 	&--footer {
 		background-color: $blue;
@@ -23,9 +32,15 @@
 	&--breadcrumbs {
 		padding-top: 25px;
 		padding-bottom: 25px;
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&--top {
 		padding-top: 15px;
+		@include r(1200) {
+			padding-top: 15px;
+		}
 	}
 	&--blue {
 		background-color: $blue;
@@ -35,6 +50,9 @@
 		background-size: 290px 290px, 290px 290px, contain;
 		background-position: bottom left -10px, top right -10px, center;
 		background-repeat: no-repeat;
+		@include r(1200) {
+			background-size: 0px 0px, 0px 0px, contain;
+		}
 	}
 	&--gray {
 		background-color: $gray;

@@ -217,10 +217,24 @@ __webpack_require__.r(__webpack_exports__);
   var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider', {
     spaceBetween: 20,
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 1,
     navigation: {
       nextEl: '.slider__btn--next',
       prevEl: '.slider__btn--prev'
+    },
+    breakpoints: {
+      540: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      840: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
     }
   });
 })();

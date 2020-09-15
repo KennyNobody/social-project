@@ -1,10 +1,18 @@
 .articles {
+	@include r(1200) {
+
+	}
 	&__title {
 		font-weight: 700;
 		font-size: 24px;
 		padding-bottom: 15px;
 		border-bottom: 2px solid $red;
 		margin-bottom: 40px;
+		@include r(1200) {
+			margin-bottom: 20px;
+			font-size: 18px;
+			padding-bottom: 5px;
+		}
 	}
 	&__content {
 		display: flex;
@@ -20,12 +28,30 @@
 		margin-bottom: 20px;
 		&--75 {
 			width: calc(75% - 5px);
+			@include r(1200) {
+				width: calc(50% - 10px);
+			}
+			@include r(580) {
+				width: 100%;
+			}
 		}
 		&--50 {
 			width: calc(50% - 10px);
+			@include r(1200) {
+				width: calc(50% - 10px);
+			}
+			@include r(580) {
+				width: 100%;
+			}
 		}
 		&--25 {
 			width: calc(25% - 15px);
+			@include r(1200) {
+				width: calc(50% - 10px);
+			}
+			@include r(580) {
+				width: 100%;
+			}
 		}
 		&--clear {
 			margin-bottom: 0px;

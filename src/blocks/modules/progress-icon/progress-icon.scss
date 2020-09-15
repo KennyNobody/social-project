@@ -8,6 +8,9 @@
 	height: 56px;
 	border-radius: 100px;
 	position: relative;
+	@include r(1200) {
+		display: none;
+	}
 	&--static {
 		.progress-icon__content {
 			background-color: #E3EBFB;

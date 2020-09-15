@@ -4,6 +4,9 @@
 	height:  85px;
 	border-radius: 50px;
 	background-color: $red;
+	@include r(1200) {
+		display: none;
+	}
 	&__spinner {
 		display: flex;
 		justify-content: center;

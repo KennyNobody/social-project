@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	&__content {
 		flex-grow: 1;
 		display: flex;
@@ -11,16 +12,26 @@
 		width: 35%;
 		padding-top: 234px;
 		padding-bottom: 140px;
+		@include r(1200) {
+			width: 100%;
+		}
 	}
 	&__discript {
 		font-size: 24px;
 		margin-bottom: 15px;
+		@include r(1200) {
+			font-size: 20px;
+		}
 	}
 	&__title {
 		font-size: 48px;
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-bottom: 50px;
+		@include r(1200) {
+			font-size: 28px;
+			margin-bottom: 28px;
+		}
 	}
 	&__footer {
 		flex-shrink: 0;
@@ -53,15 +64,24 @@
 	}
 	&__footer-content {
 		width: 50%;
+		@include r(1200) {
+			width: 100%;
+		}
 	}
 	&__footer-title {
 		font-size: 24px;
 		font-weight: 700;
 		color: $red;
 		text-transform: uppercase;
+		@include r(1200) {
+			font-size: 20px;
+		}
 	}
 	&__footer-text {
 		font-size: 24px;
+		@include r(1200) {
+			font-size: 16px;
+		}
 	}
 	&__decor {
 		position: absolute;
@@ -69,8 +89,11 @@
 		padding-right: 385px;
 		display: block;
 		top: 250px;
-		left: -150px;
+		left: -470px;
 		transform: rotate(-90deg);
+		@include r(1600) {
+			display: none;
+		}
 		&-text {
 			font-size: 48px;
 			color: $light;
@@ -99,5 +122,8 @@
 	&__loader {
 		flex-shrink: 0;
 		margin-right: 23px;
+		@include r(1200) {
+			display: none;
+		}
 	}
 }
