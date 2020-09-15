@@ -16,16 +16,25 @@
 		background: none;
 		border: none;
 		cursor: pointer;
-		background-color: $light;
+		background-color: none;
+		transition: 0.3s all;
 		&--prev {
 			left: 0px;
 		}
 		&--next {
 			right: 0px;
 		}
+		&:hover {
+			background-color: $light;
+			.slider__btn-icon {
+				fill: $blue;
+			}
+		}
 	}
 	&__btn-icon {
 		width: 16px;
 		height: 24px;
+		fill: #E3EBFB;
+		transition: 0.3s all;
 	}
 }

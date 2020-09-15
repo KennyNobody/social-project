@@ -20,6 +20,10 @@
 	&--shadow {
 		box-shadow: 0px 4px 4px rgba(142, 58, 58, 0.5);
 	}
+	&--none {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
 	&__text {
 		font-weight: 700;
 	}

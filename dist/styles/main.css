@@ -1192,7 +1192,8 @@ button.swiper-pagination-bullet {
   background: none;
   border: none;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: none;
+  transition: 0.3s all;
 }
 
 .slider__btn--prev {
@@ -1203,9 +1204,19 @@ button.swiper-pagination-bullet {
   right: 0px;
 }
 
+.slider__btn:hover {
+  background-color: #ffffff;
+}
+
+.slider__btn:hover .slider__btn-icon {
+  fill: #599CFF;
+}
+
 .slider__btn-icon {
   width: 16px;
   height: 24px;
+  fill: #E3EBFB;
+  transition: 0.3s all;
 }
 
 .article-card {
@@ -1249,7 +1260,7 @@ button.swiper-pagination-bullet {
 }
 
 .article-card__text {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   flex-grow: 1;
 }
 
@@ -1333,6 +1344,7 @@ button.swiper-pagination-bullet {
   background-color: #599CFF;
   color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(62.66% 62.66% at 49.82% 37.34%, #8FD0FF 2.7%, #599CFF 56.28%, #599CFF 95.83%), #599CFF;
 }
 
 .article-person:hover .article-person__tag {
@@ -1476,16 +1488,10 @@ button.swiper-pagination-bullet {
 .article-contact__name {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.article-contact__sep {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #FF3857;
-  border: none;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FF3857;
+  margin-bottom: 20px;
+  width: fit-content;
 }
 
 .article-contact__line {
@@ -1546,8 +1552,8 @@ button.swiper-pagination-bullet {
 }
 
 .article-author__picture {
-  width: 150px;
-  height: 150px;
+  width: 198px;
+  height: 198px;
   border-radius: 100px;
   display: block;
   overflow: hidden;
@@ -1569,16 +1575,10 @@ button.swiper-pagination-bullet {
 .article-author__name {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.article-author__sep {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #FF3857;
-  border: none;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FF3857;
+  margin-bottom: 20px;
+  width: fit-content;
 }
 
 .article-author__title {
@@ -1614,6 +1614,7 @@ button.swiper-pagination-bullet {
   background-color: #599CFF;
   color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(49.93% 369.26% at 33.33% 38.31%, #8FD0FF 2.7%, #599CFF 56.28%, #599CFF 95.83%), #599CFF;
 }
 
 .article-winner:hover .article-winner__tag {
@@ -2087,6 +2088,11 @@ button.swiper-pagination-bullet {
   box-shadow: 0px 4px 4px rgba(142, 58, 58, 0.5);
 }
 
+.btn--none {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .btn__text {
   font-weight: 700;
 }
@@ -2189,6 +2195,7 @@ button.swiper-pagination-bullet {
   padding-left: 32px;
   border-left: 2px solid #FF3857;
   font-style: italic;
+  font-size: 18px;
 }
 
 .editor figure {
