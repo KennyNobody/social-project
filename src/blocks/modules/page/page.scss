@@ -1,0 +1,12 @@
+.page {
+	padding-top: 80px;
+	@include r(1200) {
+		padding-top: 63px;
+	}
+	&--front {
+		padding-top: 0px;
+		@include r(1200) {
+			padding-top: 0px;
+		}
+	}
+}

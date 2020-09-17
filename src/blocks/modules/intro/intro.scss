@@ -4,6 +4,10 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	@include r(1200) {
+		color: $light;
+		text-align: center;
+	}
 	&__content {
 		flex-grow: 1;
 		display: flex;
@@ -14,6 +18,8 @@
 		padding-bottom: 140px;
 		@include r(1200) {
 			width: 100%;
+			padding-top: 130px;
+			padding-bottom: 130px;
 		}
 	}
 	&__discript {
@@ -30,7 +36,7 @@
 		margin-bottom: 50px;
 		@include r(1200) {
 			font-size: 28px;
-			margin-bottom: 28px;
+			margin-bottom: 30px;
 		}
 	}
 	&__footer {
@@ -41,6 +47,12 @@
 		background-color: rgba(255, 255, 255, 0.5);
 		display: flex;
 		align-items: center;
+		@include r(1200) {
+			display: block;
+			background-color: #F1F6FF;
+			opacity: 1;
+			color: $dark;
+		}
 		&:before {
 			content: '';
 			display: block;
@@ -50,6 +62,10 @@
 			right: 100%;
 			width: 50vw;
 			background-color: rgba(255, 255, 255, 0.5);
+			@include r(1200) {
+				background-color: #F1F6FF;
+				opacity: 1;
+			}
 		}
 		&:after {
 			content: '';
@@ -60,13 +76,17 @@
 			left: 100%;
 			width: 50vw;
 			background-color: rgba(255, 255, 255, 0.5);
+			@include r(1200) {
+				background-color: #F1F6FF;
+				opacity: 1;
+			}
 		}
 	}
 	&__footer-content {
-		width: 50%;
-		@include r(1200) {
-			width: 100%;
-		}
+		// width: 50%;
+		// @include r(1200) {
+		// 	width: 100%;
+		// }
 	}
 	&__footer-title {
 		font-size: 24px;
@@ -123,7 +143,8 @@
 		flex-shrink: 0;
 		margin-right: 23px;
 		@include r(1200) {
-			display: none;
+			margin-right: 0px;
+			margin-bottom: 30px;
 		}
 	}
 }

@@ -27,7 +27,8 @@
 <link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="body body--blue">
-    <header class="section-header section-header--fixed">
+    <div class="page" id="page">
+        <header class="section-header section-header--fixed">
 	<div class="container">
 		<nav class="header">
 	<div class="header__logos">
@@ -104,18 +105,18 @@
 			Контакты
 		</a>
 	</nav>
-	<button class="header__btn">
+	<a href="#mmenu" class="header__btn">
 		<svg class="header__burger-icon">
 			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
 		</svg>
-	</button>
+	</a>
 </nav>
 	</div>
 </header>
-    <main class="main main--blue">
-        <section class="section section--top section--none" style="background-image: url('img/none-bg.svg')">
-            <div class="container">
-                <div class="none">
+        <main class="main main--blue">
+            <section class="section section--top section--none" style="background-image: url('img/none-bg.svg')">
+                <div class="container">
+                    <div class="none">
 	<p class="none__text">
 		Ой! Мы не нашли то, что Вы искали...
 	</p>
@@ -125,12 +126,12 @@
 		</span>
 	</a>
 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="section section--footer">
-        <div class="container">
-            <div class="footer">
+                </div>
+            </section>
+        </main>
+        <footer class="section section--footer">
+            <div class="container">
+                <div class="footer">
 	<div class="footer__logos">
 		<a href="/" class="footer__logo">
 			<svg width="86" height="42" viewBox="0 0 86 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__logo-pict">
@@ -214,10 +215,10 @@
 		</div>
 	</div>
 </div>
-        </div>
-    </footer>
-    <div class="container">
-        <div class="temp">
+            </div>
+        </footer>
+        <div class="container">
+            <div class="temp">
 	<a href="index.html" class="temp__link">
 		Главная
 	</a>
@@ -237,6 +238,38 @@
 		404
 	</a>
 </div>
+        </div>
+    </div>
+    <div class="hidden">
+        <nav id="mmenu">
+    <ul>
+        <li>
+        	<a href="">
+        		Главная
+        	</a>
+        </li>
+        <li>
+        	<a href="">
+        		Новости
+        	</a>
+        </li>
+        <li>
+        	<a href="">
+        		Как это работает
+        	</a>
+        </li>
+        <li>
+        	<a href="">
+        		Документы
+        	</a>
+        </li>
+        <li>
+        	<a href="">
+        		Контакты
+        	</a>
+        </li>
+    </ul>
+</nav>
     </div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>

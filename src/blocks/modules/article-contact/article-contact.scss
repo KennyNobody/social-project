@@ -7,6 +7,7 @@
 	}
 	@include r(1200) {
 		display: block;
+		text-align: center;
 	}
 	&__column {
 		&--thumb {
@@ -41,6 +42,10 @@
 		border-radius: 100px;
 		display: block;
 		overflow: hidden;
+		@include r(1200) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 		img {
 			display: block;
 			height: 100%;
@@ -60,6 +65,10 @@
 		border-bottom: 2px solid $red;
 		margin-bottom: 20px;
 		width: fit-content;
+		@include r(1200) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&__job {
 
@@ -70,6 +79,9 @@
 		text-decoration: none;
 		margin-bottom: 16px;
 		color: $dark;
+		@include r(1200) {
+			justify-content: center;
+		}
 		&:last-of-type {
 			margin-bottom: 0px;
 		}

@@ -35,6 +35,9 @@
 		.header__link {
 			color: $light;
 		}
+		.header__burger-icon {
+			fill: $light;
+		}
 	}
 	&__logos {
 		display: flex;
@@ -104,6 +107,7 @@
 		width: 24px;
 		height: 24px;
 		display: block;
+		transition: 0.3s all;
 	}
 
 }

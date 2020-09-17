@@ -5,7 +5,10 @@
 	border-radius: 50px;
 	background-color: $red;
 	@include r(1200) {
-		display: none;
+		width: 46px;
+		height: 46px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	&__spinner {
 		display: flex;
@@ -13,5 +16,11 @@
 		align-items: center;
 		width: 100%;
 		height:  100%;
+		@include r(1200) {
+			svg {
+				width: 24px !important;
+				height: 24px !important;
+			}
+		}
 	}
 }

@@ -9,13 +9,13 @@
 		padding-bottom: 50px;
 	}
 	&--intro {
-		background-size: cover;
+		background-size: cover, 0px;
 		background-position: center top;
 		background-repeat: no-repeat;
 		padding: 0px;
 		@include r(1200) {
 			padding: 0px;
-			background-image: none !important;
+			background-size: 0px, cover;
 			background-color: $blue;
 		}
 	}

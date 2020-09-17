@@ -1,20 +1,29 @@
 .request {
 	display: flex;
 	justify-content: space-between;
+	@include r(1200) {
+		display: block;
+	}
 	&__main {
 		width: calc(100% / 12 * 8 - 10px);
 		@include r(1200) {
 			width: 100%;
+			margin-bottom: 50px;
 		}
 	}
 	&__thumb {
 		width: calc(100% / 12 * 4 - 10px);
 		@include r(1200) {
-			display: none;
+			width: 100%;
 		}
 		img {
 			display: block;
 			width: 100%;
+			@include r(1200) {
+				max-width: 300px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 	&__title {
@@ -23,12 +32,15 @@
 	&__content {
 		margin-bottom: 40px;
 		@include r(1200) {
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 		}
 	}
 	&__toolbar {
 		width: fit-content;
 		position: relative;
+		@include r(1200) {
+			width: 100%;
+		}
 		&:after {
 			background-image: url('../img/request-accent.svg');
 			position: absolute;

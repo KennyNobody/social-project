@@ -178,6 +178,32 @@
 
 /***/ }),
 
+/***/ "./src/blocks/modules/mmenu/mmenu.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/mmenu/mmenu.js ***!
+  \*******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var mmenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mmenu-js */ "./node_modules/mmenu-js/src/mmenu.js");
+
+
+
+(function initMenu() {
+  new mmenu_js__WEBPACK_IMPORTED_MODULE_1__["default"]("#mmenu", {
+    "extensions": ["pagedim-black"],
+    navbar: {
+      title: 'Лучший социальный проект'
+    }
+  });
+})();
+
+/***/ }),
+
 /***/ "./src/blocks/modules/section-header/section-header.js":
 /*!*************************************************************!*\
   !*** ./src/blocks/modules/section-header/section-header.js ***!
@@ -255,6 +281,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_slider_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/slider/slider */ "./src/blocks/modules/slider/slider.js");
+/* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
+
 
 
 
