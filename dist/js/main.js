@@ -155,6 +155,56 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/btn/btn.js":
+/*!***************************************!*\
+  !*** ./src/blocks/modules/btn/btn.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {(function () {
+  $('.btn--load').on('click', function () {
+    var _this = $(this);
+
+    var data = {
+      'action': 'loadmore',
+      'query': _this.attr('data-param-posts'),
+      'page': _this.attr('data-page'),
+      'tpl': _this.attr('data-tpl')
+    };
+
+    _this.html("<span class=\"btn__text\">\n\t\t\t\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430...\n\t\t\t</span>\n\t\t\t<svg class=\"btn__icon\">\n\t\t\t<use xlink:href=\"" + _this.attr('data-icon') + "\"></use>\n\t\t\t</svg>");
+
+    var tempPage = _this.attr('data-page');
+
+    $.ajax({
+      url: '/wp-admin/admin-ajax.php',
+      data: data,
+      type: 'POST',
+      success: function success(data) {
+        if (data) {
+          _this.html("<span class=\"btn__text\">\n\t\t\t\t\t\t\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0435\u0449\u0435\n\t\t\t\t\t\t</span>\n\t\t\t\t\t\t<svg class=\"btn__icon\">\n\t\t\t\t\t\t<use xlink:href=\"" + _this.attr('data-icon') + "\"></use>\n\t\t\t\t\t\t</svg>");
+
+          _this.parent().parent().find('.articles__item--clear').first().before(data);
+
+          tempPage++;
+
+          _this.attr('data-page', tempPage++);
+
+          if (_this.attr('data-page') == _this.attr('data-max-pages')) {
+            _this.parent().remove();
+          }
+        } else {
+          _this.parent().remove();
+        }
+      }
+    });
+  });
+})();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./src/blocks/modules/header/header.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
@@ -198,6 +248,10 @@ __webpack_require__.r(__webpack_exports__);
     "extensions": ["pagedim-black"],
     navbar: {
       title: 'Лучший социальный проект'
+    },
+    onClick: {
+      close: true,
+      preventDefault: false
     }
   });
 })();
@@ -242,7 +296,6 @@ __webpack_require__.r(__webpack_exports__);
 (function initPersonSlider() {
   var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider', {
     spaceBetween: 20,
-    loop: true,
     slidesPerView: 1,
     navigation: {
       nextEl: '.slider__btn--next',
@@ -282,6 +335,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_slider_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/slider/slider */ "./src/blocks/modules/slider/slider.js");
 /* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/btn/btn */ "./src/blocks/modules/btn/btn.js");
+/* harmony import */ var _modules_btn_btn__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_btn_btn__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

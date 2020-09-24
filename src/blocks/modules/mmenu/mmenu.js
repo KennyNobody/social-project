@@ -8,6 +8,10 @@ import Mmenu from 'mmenu-js';
 		],
 		navbar: {
 			title: 'Лучший социальный проект'
+		},
+		onClick : {
+			close          : true,
+			preventDefault : false,
 		}
 	});
 })();

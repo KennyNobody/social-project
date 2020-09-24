@@ -19,9 +19,11 @@
 			}
 		}
 		&--name {
-			margin-right: 100px;
+			// margin-right: 100px;
+			width: calc(100% / 12 * 3 - 8px);
 			@include r(1200) {
-				margin-right: 0px;
+				width: 100%;
+				// margin-right: 0px;
 				margin-bottom: 20px;
 			}
 		}

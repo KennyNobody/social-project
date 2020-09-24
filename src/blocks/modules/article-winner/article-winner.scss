@@ -8,6 +8,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: calc(100% / 12 * 8 - 20px);
+	margin-bottom: 20px;
 	@include r(1200) {
 		display: block;
 		text-align: center;
@@ -16,6 +17,9 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding: 40px 15px 25px 15px;
+	}
+	&:last-of-type {
+		margin-bottom: 0px;
 	}
 	&:hover {
 		background-color: $blue;
@@ -33,19 +37,20 @@
 		display: block;
 		margin-right: 40px;
 		position: relative;
+		flex-shrink: 0;
 		@include r(1200) {
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 27px;
 		}
-	}
-	&__picture {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		border-radius: 150px;
-		overflow: hidden;
-		display: block;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 150px;
+			overflow: hidden;
+			display: block;
+		}
 	}
 	&__award {
 		width: 56px;

@@ -40,9 +40,10 @@
 		position: relative;
 		@include r(1200) {
 			width: 100%;
+			text-align: center;
 		}
 		&:after {
-			background-image: url('../img/request-accent.svg');
+			background-image: url('./img/request-accent.svg');
 			position: absolute;
 			display: block;
 			width: 182px;

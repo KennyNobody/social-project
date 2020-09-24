@@ -27,14 +27,14 @@
 		margin-right: auto;
 		margin-bottom: 27px;
 		position: relative;
-	}
-	&__picture {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		border-radius: 150px;
-		overflow: hidden;
-		display: block;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 150px;
+			overflow: hidden;
+			display: block;
+		}
 	}
 	&__award {
 		width: 56px;

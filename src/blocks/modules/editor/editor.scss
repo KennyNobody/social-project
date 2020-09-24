@@ -72,10 +72,12 @@
 	}
 	picture {
 		display: block;
+		margin-bottom: 30px;
 	}
 	img {
 		display: block;
 		width: 100%;
+		height: auto;
 		margin-bottom: 15px;
 		@include r(1200) {
 			margin-bottom: 10px;
