@@ -3198,6 +3198,11 @@ body.modal-open .mm-slideout {
   align-items: center;
 }
 
+.footer__logos {
+  display: flex;
+  align-items: center;
+}
+
 .footer__logo {
   margin-right: 36px;
   text-decoration: none;
@@ -4812,8 +4817,13 @@ body.modal-open .mm-slideout {
   }
 
   .footer__logos {
-    text-align: center;
+    flex-direction: column;
     margin-bottom: 30px;
+  }
+
+  .footer__logo {
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 
   .footer__nav {
