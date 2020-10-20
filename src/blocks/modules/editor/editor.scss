@@ -5,9 +5,21 @@
 	&--bottom-60 {
 		margin-bottom: 60px;
 	}
-	h2, h3, h4, h5 {
+	// & :last-child {
+	// 	margin-bottom: 0px;
+	// }
+	h1, h2, h3, h4, h5 {
 		font-weight: 700;
 		margin-bottom: 1.5rem;
+		span {
+			font-size: inherit !important;
+		}
+	}
+	h1 {
+		font-size: 48px;
+		@include r(1200) {
+			font-size: 24px;
+		}
 	}
 	h2 {
 		font-size: 36px;
@@ -38,9 +50,19 @@
 	}
 	p {
 		margin-bottom: 1.5rem;
-		&:last-of-type {
-			margin-bottom: 0px;
-		}
+	}
+	ul {
+		list-style: decimal;
+		list-style-position: inside;
+		margin-bottom: 1rem;
+	}
+	ol {
+		list-style: disc;
+		list-style-position: inside;
+		margin-bottom: 1rem;
+	}
+	em {
+		font-style: italic;
 	}
 	blockquote {
 		display: block;
@@ -58,7 +80,6 @@
 	figure {
 		display: block;
 		padding-bottom: 15px;
-		border-bottom: 1px solid #848DB0;
 		margin-bottom: 1.5rem;
 		@include r(1200) {
 			padding-bottom: 10px;

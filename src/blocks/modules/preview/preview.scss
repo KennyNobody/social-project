@@ -1,4 +1,4 @@
-.preview {
+a.preview {
 	border: 7px solid $blue;
 	position: relative;
 	display: block;
@@ -7,10 +7,7 @@
 	color: $dark;
 	text-decoration: none;
 	background-repeat: no-repeat;
-	background-position: right bottom;
-	&:hover {
-		opacity: 0.7;
-	}
+	background-position: right bottom;	
 	@include r(1200) {
 		padding-bottom: 160px;
 		background-size: 290px auto;

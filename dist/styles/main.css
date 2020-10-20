@@ -3593,6 +3593,7 @@ body.modal-open .mm-slideout {
   text-decoration: none;
   border-radius: 5px;
   background-color: #ffffff;
+  height: 100%;
 }
 
 .article-person:hover {
@@ -4446,12 +4447,25 @@ body.modal-open .mm-slideout {
   margin-bottom: 60px;
 }
 
+.editor h1,
 .editor h2,
 .editor h3,
 .editor h4,
 .editor h5 {
   font-weight: 700;
   margin-bottom: 1.5rem;
+}
+
+.editor h1 span,
+.editor h2 span,
+.editor h3 span,
+.editor h4 span,
+.editor h5 span {
+  font-size: inherit !important;
+}
+
+.editor h1 {
+  font-size: 48px;
 }
 
 .editor h2 {
@@ -4479,8 +4493,20 @@ body.modal-open .mm-slideout {
   margin-bottom: 1.5rem;
 }
 
-.editor p:last-of-type {
-  margin-bottom: 0px;
+.editor ul {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.editor ol {
+  list-style: disc;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+}
+
+.editor em {
+  font-style: italic;
 }
 
 .editor blockquote {
@@ -4496,7 +4522,6 @@ body.modal-open .mm-slideout {
 .editor figure {
   display: block;
   padding-bottom: 15px;
-  border-bottom: 1px solid #848DB0;
   margin-bottom: 1.5rem;
 }
 
@@ -4581,7 +4606,7 @@ body.modal-open .mm-slideout {
 
 /*V*/
 
-.preview {
+a.preview {
   border: 7px solid #599CFF;
   position: relative;
   display: block;
@@ -4593,22 +4618,18 @@ body.modal-open .mm-slideout {
   background-position: right bottom;
 }
 
-.preview:hover {
-  opacity: 0.7;
-}
-
-.preview__content {
+a.preview__content {
   padding: 67px 30px;
   width: 66%;
 }
 
-.preview__title {
+a.preview__title {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
 }
 
-.preview__discript {
+a.preview__discript {
   font-size: 18px;
 }
 
@@ -5150,6 +5171,10 @@ body.modal-open .mm-slideout {
     width: 18px;
   }
 
+  .editor h1 {
+    font-size: 24px;
+  }
+
   .editor h2 {
     font-size: 22px;
   }
@@ -5207,22 +5232,22 @@ body.modal-open .mm-slideout {
     height: 24px !important;
   }
 
-  .preview {
+  a.preview {
     padding-bottom: 160px;
     background-size: 290px auto;
   }
 
-  .preview__content {
+  a.preview__content {
     padding: 30px 15px;
     width: 100%;
   }
 
-  .preview__title {
+  a.preview__title {
     font-size: 20px;
     margin-bottom: 15px;
   }
 
-  .preview__discript {
+  a.preview__discript {
     font-size: 16px;
   }
 
