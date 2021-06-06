@@ -2,6 +2,7 @@
 	position: relative;
 	&__slide {
 		background-color: $light;
+		height: auto;
 	}
 	&__btn {
 		position: absolute;

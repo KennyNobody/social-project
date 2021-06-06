@@ -3427,6 +3427,7 @@ body.modal-open .mm-slideout {
 
 .slider__slide {
   background-color: #ffffff;
+  height: auto;
 }
 
 .slider__btn {
@@ -4493,13 +4494,13 @@ body.modal-open .mm-slideout {
   margin-bottom: 1.5rem;
 }
 
-.editor ul {
+.editor ol {
   list-style: decimal;
   list-style-position: inside;
   margin-bottom: 1rem;
 }
 
-.editor ol {
+.editor ul {
   list-style: disc;
   list-style-position: inside;
   margin-bottom: 1rem;
@@ -4606,7 +4607,7 @@ body.modal-open .mm-slideout {
 
 /*V*/
 
-a.preview {
+.preview {
   border: 7px solid #599CFF;
   position: relative;
   display: block;
@@ -4618,19 +4619,23 @@ a.preview {
   background-position: right bottom;
 }
 
-a.preview__content {
+.preview__content {
   padding: 67px 30px;
   width: 66%;
 }
 
-a.preview__title {
+.preview__title {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
 }
 
-a.preview__discript {
+.preview__discript {
   font-size: 18px;
+}
+
+a.preview:hover {
+  opacity: 0.7;
 }
 
 /*V*/
@@ -5232,22 +5237,22 @@ a.preview__discript {
     height: 24px !important;
   }
 
-  a.preview {
+  .preview {
     padding-bottom: 160px;
     background-size: 290px auto;
   }
 
-  a.preview__content {
+  .preview__content {
     padding: 30px 15px;
     width: 100%;
   }
 
-  a.preview__title {
+  .preview__title {
     font-size: 20px;
     margin-bottom: 15px;
   }
 
-  a.preview__discript {
+  .preview__discript {
     font-size: 16px;
   }
 

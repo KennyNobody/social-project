@@ -1,4 +1,4 @@
-a.preview {
+.preview {
 	border: 7px solid $blue;
 	position: relative;
 	display: block;
@@ -34,5 +34,11 @@ a.preview {
 		@include r(1200) {
 			font-size: 16px;
 		}
+	}
+}
+
+a.preview {
+	&:hover {	
+		opacity: 0.7;	
 	}
 }
